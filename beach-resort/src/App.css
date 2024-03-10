@@ -2,6 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  color: #222;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -44,4 +48,51 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 3rem 7.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+
+.banner > h1 {
+  font-size: 3rem;
+}
+
+.banner div {
+  width: 10rem;
+  height: 5px;
+  background: #af9a7d;
+  margin: 1.7rem auto;
+}
+
+.banner > p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #222;
+  background: #af9a7d;
+  cursor: pointer;
+  padding: 0.7rem 1.7rem;
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  border: 3px solid #af9a7d;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #af9a7d;
 }
